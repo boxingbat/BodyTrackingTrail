@@ -20,6 +20,7 @@
 		0F683EFE2B7788B0008841BE /* SkeletonJoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F683EFD2B7788B0008841BE /* SkeletonJoint.swift */; };
 		0F683F002B778900008841BE /* SkeletonBone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F683EFF2B778900008841BE /* SkeletonBone.swift */; };
 		0F683F022B778BAC008841BE /* Bones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F683F012B778BAC008841BE /* Bones.swift */; };
+		0F683F042B779AD8008841BE /* BodySkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F683F032B779AD8008841BE /* BodySkeleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		0F683EFD2B7788B0008841BE /* SkeletonJoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonJoint.swift; sourceTree = "<group>"; };
 		0F683EFF2B778900008841BE /* SkeletonBone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonBone.swift; sourceTree = "<group>"; };
 		0F683F012B778BAC008841BE /* Bones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bones.swift; sourceTree = "<group>"; };
+		0F683F032B779AD8008841BE /* BodySkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySkeleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				0F683EFD2B7788B0008841BE /* SkeletonJoint.swift */,
 				0F683EFF2B778900008841BE /* SkeletonBone.swift */,
 				0F683F012B778BAC008841BE /* Bones.swift */,
+				0F683F032B779AD8008841BE /* BodySkeleton.swift */,
 				0F683ECE2B777F59008841BE /* ContentView.swift */,
 				0F683ED02B777F5A008841BE /* Assets.xcassets */,
 				0F683ED52B777F5A008841BE /* Persistence.swift */,
@@ -280,6 +283,7 @@
 				0F683ECD2B777F59008841BE /* BodyTrackingTrailApp.swift in Sources */,
 				0F683EFE2B7788B0008841BE /* SkeletonJoint.swift in Sources */,
 				0F683ED92B777F5A008841BE /* BodyTrackingTrail.xcdatamodeld in Sources */,
+				0F683F042B779AD8008841BE /* BodySkeleton.swift in Sources */,
 				0F683F022B778BAC008841BE /* Bones.swift in Sources */,
 				0F683EFC2B778154008841BE /* ARViewContainer .swift in Sources */,
 				0F683F002B778900008841BE /* SkeletonBone.swift in Sources */,
