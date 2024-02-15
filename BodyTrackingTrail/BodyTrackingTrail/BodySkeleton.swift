@@ -32,22 +32,22 @@ class BodySkeleton: Entity {
                 jointColor = .yellow
 
             case _ where jointName.hasPrefix("spine_"):
-                jointRadius = 0.75
+                jointRadius *= 0.75
 
             case "left_hand_joint", "right_hand_joint":
-                jointRadius *= 0.25
+                jointRadius *= 1
                 jointColor = .green
 
             case _ where jointName.hasPrefix("left_hand") || jointName.hasPrefix("right_hand"):
-                jointRadius *= 0.5
+                jointRadius *= 0.25
                 jointColor = .yellow
 
             case _ where jointName.hasPrefix("left_toes") || jointName.hasPrefix("right_toes"):
-                jointRadius *= 1
+                jointRadius *= 0.5
                 jointColor = .yellow
 
             default:
-                jointRadius = 0.5
+                jointRadius = 0.05
                 jointColor = .green
             }
 
@@ -104,7 +104,7 @@ class BodySkeleton: Entity {
     }
 
     private func createSkeletonBone(bone: Bones, bodyAnchor: ARBodyAnchor) -> SkeletonBone? {
-        guard let fromJointEntityTransform = bodyAnchor.skeleton.modelTransform(for: ARSkeleton.JointName(rawValue:bone.jointFromName)),
+        guard let fromJointEntityTransform = bodyAnchor.skeleton.modelTransform(for: ARSkeleton.JointName(rawValue: bone.jointFromName)),
               let toJointEntityTransform = bodyAnchor.skeleton.modelTransform(for: ARSkeleton.JointName(rawValue: bone.jointToName))
         else { return nil }
 
